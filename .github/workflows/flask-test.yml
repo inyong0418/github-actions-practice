@@ -4,17 +4,6 @@ on:
   push:
     branches:
       - main
-
-
-jobs:
-  use_api:
-    runs-on: ubuntu-latest
-    permissions: {}
-    steps:
-      - env:
-          GH_TOKEN: ${{ secret.INYONG0418 }}
-        run: |
-          gh api /PATH
 jobs:
   build:
     runs-on: ubuntu-latest
